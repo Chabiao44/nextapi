@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type Comment = {
   postId: number;
   id: number;
@@ -38,18 +40,20 @@ export default async function CommentPage({ params }: Props) {
         {prettyJson}
       </pre>
 
-      <a href="/post-client"style={{
-          display: "inline-block",
-          marginTop: "20px",
-          padding: "6px 12px",
-          background: "#555",
-          color: "white",
-          borderRadius: "6px",
-          textDecoration: "none",
-        }}
-      >
-        🔙 กลับ
-      </a>
+      <Link
+  href="/post-client"
+  style={{
+    display: "inline-block",
+    marginTop: "20px",
+    padding: "6px 12px",
+    background: "#555",
+    color: "white",
+    borderRadius: "6px",
+    textDecoration: "none",
+  }}
+>
+  ไปยังโพสต์
+</Link>
     </div>
   );
 }
