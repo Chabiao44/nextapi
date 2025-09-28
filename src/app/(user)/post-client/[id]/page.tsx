@@ -38,9 +38,7 @@ export default async function CommentPage({ params }: Props) {
         {prettyJson}
       </pre>
 
-      <a
-        href="/post-client"
-        style={{
+      <a href="/post-client"style={{
           display: "inline-block",
           marginTop: "20px",
           padding: "6px 12px",
